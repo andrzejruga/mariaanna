@@ -1,12 +1,21 @@
 {
     "version": 3,
-    "mappings": "AGAA,AAAA,CAAC,CAAC;EACE,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,UAAU,EAAE,UAAU;CACzB;;AAED,AAAA,CAAC;AACD,CAAC,AAAA,OAAO;AACR,CAAC,AAAA,QAAQ,CAAC;EACN,UAAU,EAAE,OAAO;CACtB",
+    "mappings": "AAAA,OAAO,CAAC,sEAAI;AACZ,OAAO,CAAC,+DAAI;AACZ,OAAO,CAAC,qEAAI;AGFZ,AAAA,CAAC,CAAC;EACE,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,UAAU,EAAE,UAAU;CACzB;;AAED,AAAA,CAAC;AACD,CAAC,AAAA,OAAO;AACR,CAAC,AAAA,QAAQ,CAAC;EACN,UAAU,EAAE,OAAO;CACtB",
     "sources": [
         "../sass/main.scss",
         "../sass/abstracts/_colors.scss",
         "../sass/abstracts/_type.scss",
         "../sass/base/_base.scss",
-        "../sass/base/_typography.scss"
+        "../sass/base/_typography.scss",
+        "../sass/layout/_about.scss",
+        "../sass/layout/_contact.scss",
+        "../sass/layout/_follow.scss",
+        "../sass/layout/_footer.scss",
+        "../sass/layout/_header.scss",
+        "../sass/layout/_nav.scss",
+        "../sass/layout/_testimonials.scss",
+        "../sass/layout/_video.scss",
+        "../sass/layout/_works.scss"
     ],
     "names": [],
     "file": "main.css"
