@@ -11,9 +11,6 @@
 @import './base/typography';
 
 // 3. Layout
-
-
-// 4. Components
 @import './layout/about';
 @import './layout/contact';
 @import './layout/follow';
@@ -23,3 +20,6 @@
 @import './layout/testimonials';
 @import './layout/video';
 @import './layout/works';
+
+// 4. Components
+@import './components/logo';

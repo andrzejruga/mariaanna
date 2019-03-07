@@ -4,8 +4,6 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
 
 *,
@@ -15,13 +13,37 @@
           box-sizing: inherit;
 }
 
-.header__container {
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+.container {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1200px;
+}
+
+.header {
   height: 100vh;
   background-image: url(../../img/01-header.jpg);
-  background-position: left center;
+  background-position: 15% center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .header__box {
   color: #ffffff;
+  text-align: center;
+}
+
+.logo {
+  font-family: "Dancing Script", cursive;
+  font-size: 2.2rem;
+}
+
+.logo__name {
+  font-size: 3.3rem;
 }
 /*# sourceMappingURL=main.css.map */
