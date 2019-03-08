@@ -29,6 +29,14 @@ body {
   max-width: 1200px;
 }
 
+.pinkish-line {
+  display: block;
+  width: 6.2rem;
+  height: .3rem;
+  background-color: #d07c7c;
+  margin: 2.5rem 0 3.5rem;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: "Playfair Display", serif;
   font-weight: 400;
@@ -41,11 +49,34 @@ h1 {
 h2 {
   font-size: 2.5rem;
   text-transform: uppercase;
+  color: #5a5957;
+  text-align: center;
 }
 
 p {
   font-size: 1.6rem;
   line-height: 2.5rem;
+  color: #848282;
+  text-align: center;
+}
+
+.about__box {
+  width: 65%;
+  margin: 10rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about__paragraph {
+  font-size: 1.4rem;
 }
 
 .header {
@@ -109,6 +140,7 @@ p {
 
 .header__paragraph {
   width: 65%;
+  color: #ffffff;
 }
 
 .header__arrow {

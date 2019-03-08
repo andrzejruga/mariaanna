@@ -10,9 +10,14 @@ h1 {
 h2 {
     font-size: 2.5rem;
     text-transform: uppercase;
+    color: $text-headings;
+    text-align: center;
 }
 
 p {
     font-size: 1.6rem;
     line-height: 2.5rem;
+    color: $text-main;
+    text-align: center;
 }
+
