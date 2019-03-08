@@ -1,0 +1,41 @@
+.nav {
+    border-bottom: 1px solid lightgray;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        padding: 2rem 0;
+    }
+
+    &__logo {
+        color: $text-nav-logo;
+    }
+
+    &__list {
+        list-style: none;
+        display: flex;
+        align-items: center;
+
+       
+    }
+
+    &__item {
+        margin-left: 5rem;
+        padding: 0.5rem 0;
+
+        &:nth-child(3) {
+            border-bottom: 2px solid $color-accent;
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: $text-nav-li;
+        font-size: 1.3rem;
+        font-weight: $font-middle;
+        
+        
+    }
+
+}
