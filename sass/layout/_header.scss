@@ -43,10 +43,24 @@
     }
 
     &__arrow {
-        width: 10px;
+        width: 15px;
         height: 20px;
-        background-color: yellow;
         position: absolute;
         bottom: 7rem;
+        animation: arrow 1s infinite;
+        animation-direction: alternate;
+    }
+
+    @keyframes arrow {
+        0% {
+            transform: translateY(0);
+        }
+        100% {
+            transform: translateY(1.6rem);
+        }
+    }
+
+    &__link {
+        color: white;
     }
 }

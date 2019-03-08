@@ -112,11 +112,40 @@ p {
 }
 
 .header__arrow {
-  width: 10px;
+  width: 15px;
   height: 20px;
-  background-color: yellow;
   position: absolute;
   bottom: 7rem;
+  -webkit-animation: arrow 1s infinite;
+          animation: arrow 1s infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+@-webkit-keyframes arrow {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(1.6rem);
+            transform: translateY(1.6rem);
+  }
+}
+
+@keyframes arrow {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(1.6rem);
+            transform: translateY(1.6rem);
+  }
+}
+
+.header__link {
+  color: white;
 }
 
 .logo {
