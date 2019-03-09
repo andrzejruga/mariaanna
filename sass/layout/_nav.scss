@@ -7,14 +7,15 @@
         padding: 2rem 0;
     }
 
-    &__logo {
+    &__logo-link {
+        text-decoration: none;
         color: $text-nav-logo;
     }
 
     &__list {
         list-style: none;
         display: flex;
-        align-items: center;       
+        align-items: center;
     }
 
     &__item {

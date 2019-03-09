@@ -21,13 +21,6 @@ body {
 .container {
     margin: 0 auto;
     width: 90%;
-    max-width: 1200px;
+    // max-width: 1200px;
 }
 
-.pinkish-line {
-    display: block;
-    width: 6.2rem;
-    height: .3rem;
-    background-color: $color-accent;
-    margin: 2.5rem 0 3.5rem;
-}

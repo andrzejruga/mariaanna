@@ -8,7 +8,7 @@
     <title>MariaAnna</title>
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="header">
         <div class="container header__container">
             <div class="header__box">
                 <div class="logo">
@@ -31,7 +31,7 @@
 
     <nav class="nav">
         <div class="container nav__container">
-            <div class="nav__logo logo">MariaAnna</div>
+            <div class="nav__logo logo"><a href="#header" class="nav__logo-link">MariaAnna</a></div>
             <div class="nav__list">
                 <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
                 <li class="nav__item"><a href="#works" class="nav__link">Works</a></li>
@@ -43,36 +43,57 @@
 
     <section class="about" id="about">
         <div class="container about__container">
-            <div class="about__box">
-                <h2 class="subtitle">A little bit about me</h2>
-                <span class="pinkish-line"></span>
-                <p class="about__paragraph">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim.</p>
+            <div class="section__box">
+                <h2 class="section__subtitle">A little bit about me</h2>
+                <span class="section__pinkish-line"></span>
+                <p class="section__paragraph about__paragraph">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim.</p>
             </div>
         </div>
     </section>
 
-    <section class="works">
-        <div class="container"></div>
+    <section class="works" id="works">
+        <div class="container works__container">
+            <div class="section__box">
+                <h2 class="section__subtitle">Works</h2>
+                <span class="section__pinkish-line"></span>
+            </div>
+
+        </div>
     </section>
 
     <section class="testimonials">
-        <div class="container"></div>
+        <div class="container testimonials__container">
+            <div class="section__box">
+                <h2 class="section__subtitle">See the world through my lens</h2>
+                <span class="section__pinkish-line"></span>
+            </div>
+        </div>
     </section>
 
     <section class="video">
-        <div class="container"></div>
+        <div class="container video__container"></div>
     </section>
 
-    <section class="follow">
-        <div class="container"></div>
+    <section class="follow" id="follow">
+        <div class="container follow__container">
+            <div class="section__box">
+                <h2 class="section__subtitle">Follow me</h2>
+                <span class="section__pinkish-line"></span>
+            </div>
+        </div>
     </section>
 
-    <section class="contact">
-        <div class="container"></div>
+    <section class="contact" id="contact">
+        <div class="container contact__container">
+            <div class="section__box">
+                <h2 class="section__subtitle">Contact me</h2>
+                <span class="section__pinkish-line"></span>
+            </div>
+        </div>
     </section>
 
     <footer class="footer">
-        <div class="container"></div>
+        <div class="container footer__container"></div>
     </footer>
 
     <script src="./js/main.js"></script>

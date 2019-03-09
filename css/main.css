@@ -26,15 +26,6 @@ body {
 .container {
   margin: 0 auto;
   width: 90%;
-  max-width: 1200px;
-}
-
-.pinkish-line {
-  display: block;
-  width: 6.2rem;
-  height: .3rem;
-  background-color: #d07c7c;
-  margin: 2.5rem 0 3.5rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -58,21 +49,6 @@ p {
   line-height: 2.5rem;
   color: #848282;
   text-align: center;
-}
-
-.about__box {
-  width: 65%;
-  margin: 10rem auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .about__paragraph {
@@ -194,7 +170,8 @@ p {
   padding: 2rem 0;
 }
 
-.nav__logo {
+.nav__logo-link {
+  text-decoration: none;
   color: #838181;
 }
 
@@ -233,5 +210,28 @@ p {
 
 .logo__name {
   font-size: 3.3rem;
+}
+
+.section__box {
+  width: 65%;
+  margin: 10rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section__pinkish-line {
+  display: block;
+  width: 6.2rem;
+  height: .3rem;
+  background-color: #d07c7c;
+  margin: 2.5rem 0 3.5rem;
 }
 /*# sourceMappingURL=main.css.map */
