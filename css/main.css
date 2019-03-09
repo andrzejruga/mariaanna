@@ -210,11 +210,6 @@ p {
 
 .nav__item {
   margin-left: 5rem;
-  padding: 0.5rem 0;
-}
-
-.nav__item:nth-child(3) {
-  border-bottom: 2px solid #d07c7c;
 }
 
 .nav__link {
@@ -223,6 +218,12 @@ p {
   color: #696969;
   font-size: 1.3rem;
   font-weight: 500;
+  padding: 0.5rem 0;
+}
+
+.nav__link--underline {
+  border-bottom: 2px solid #d07c7c;
+  border-top: 2px solid transparent;
 }
 
 .logo {

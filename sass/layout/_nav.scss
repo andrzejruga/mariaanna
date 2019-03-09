@@ -14,18 +14,11 @@
     &__list {
         list-style: none;
         display: flex;
-        align-items: center;
-
-       
+        align-items: center;       
     }
 
     &__item {
         margin-left: 5rem;
-        padding: 0.5rem 0;
-
-        &:nth-child(3) {
-            border-bottom: 2px solid $color-accent;
-        }
     }
 
     &__link {
@@ -34,8 +27,11 @@
         color: $text-nav-li;
         font-size: 1.3rem;
         font-weight: $font-middle;
-        
-        
-    }
+        padding: 0.5rem 0;
 
+        &--underline {
+            border-bottom: 2px solid $color-accent;
+            border-top: 2px solid transparent;
+        }
+    }
 }
