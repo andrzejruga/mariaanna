@@ -39,10 +39,76 @@
         grid-area: animals;
     }
 
+    &__img-box {
+        position: relative;
+    }
+
     &__img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
+    }
+
+    &__img-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: $text-inverse;
+        padding: .5rem 0;
+    }
+
+    &__text-heading {
+        font-size: 2.5rem;
+        text-transform: uppercase;
+    }
+
+    &__text-line {
+        display: block;
+        height: .2rem;
+        background-color: $text-inverse;
+        margin: 1rem -1rem;
+    }
+
+    &__text-paragraph {
+        color: $text-inverse;
+    }
+
+    &__border {
+        display: block;
+        width: 2rem;
+        height: 2rem;
+        position: absolute;
+        border: 2px solid $text-inverse;
+
+        &--top-left {
+            top: 0;
+            left: -4rem;
+            border-right: transparent;
+            border-bottom: transparent;
+        }
+
+        &--top-right {
+            top: 0;
+            right: -4rem;
+            border-left: transparent;
+            border-bottom: transparent;
+        }
+
+        &--bottom-left {
+            bottom: 0;
+            left: -4rem;
+            border-top: transparent;
+            border-right: transparent;
+        }
+
+        &--bottom-right {
+            bottom: 0;
+            right: -4rem;
+            border-top: transparent;
+            border-left: transparent;
+        }
     }
 }

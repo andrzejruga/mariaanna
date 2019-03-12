@@ -254,12 +254,79 @@ p {
   grid-area: animals;
 }
 
+.works__img-box {
+  position: relative;
+}
+
 .works__img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   display: block;
+}
+
+.works__img-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+  color: #ffffff;
+  padding: .5rem 0;
+}
+
+.works__text-heading {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
+.works__text-line {
+  display: block;
+  height: .2rem;
+  background-color: #ffffff;
+  margin: 1rem -1rem;
+}
+
+.works__text-paragraph {
+  color: #ffffff;
+}
+
+.works__border {
+  display: block;
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  border: 2px solid #ffffff;
+}
+
+.works__border--top-left {
+  top: 0;
+  left: -4rem;
+  border-right: transparent;
+  border-bottom: transparent;
+}
+
+.works__border--top-right {
+  top: 0;
+  right: -4rem;
+  border-left: transparent;
+  border-bottom: transparent;
+}
+
+.works__border--bottom-left {
+  bottom: 0;
+  left: -4rem;
+  border-top: transparent;
+  border-right: transparent;
+}
+
+.works__border--bottom-right {
+  bottom: 0;
+  right: -4rem;
+  border-top: transparent;
+  border-left: transparent;
 }
 
 .logo {
