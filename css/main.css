@@ -1,14 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:300,400,500,700");
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display");
 @import url("https://fonts.googleapis.com/css?family=Dancing+Script:400,700");
-* {
-  margin: 0;
-  padding: 0;
-}
-
 *,
 *::after,
 *::before {
+  margin: 0;
+  padding: 0;
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
 }
@@ -214,11 +211,8 @@ p {
       grid-template-columns: repeat(3, auto);
   -ms-grid-rows: auto;
       grid-template-rows: auto;
-  grid-gap: 2.5rem;
+  grid-gap: 1.5rem;
       grid-template-areas: "nature nature urban" "people wedding urban" "architecture architecture animals";
-  -webkit-box-pack: stretch;
-      -ms-flex-pack: stretch;
-          justify-content: stretch;
 }
 
 .works__nature {
@@ -265,6 +259,7 @@ p {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  display: block;
 }
 
 .logo {
