@@ -203,6 +203,70 @@ p {
   border-top: 2px solid transparent;
 }
 
+.works__container {
+  width: 100%;
+}
+
+.works__grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[3];
+      grid-template-columns: repeat(3, auto);
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  grid-gap: 2.5rem;
+      grid-template-areas: "nature nature urban" "people wedding urban" "architecture architecture animals";
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
+}
+
+.works__nature {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: nature;
+}
+
+.works__urban {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 3;
+  grid-area: urban;
+}
+
+.works__people {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: people;
+}
+
+.works__wedding {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: wedding;
+}
+
+.works__architecture {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: architecture;
+}
+
+.works__animals {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: animals;
+}
+
+.works__img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .logo {
   font-family: "Dancing Script", cursive;
   font-size: 2.2rem;
