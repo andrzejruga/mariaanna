@@ -12,3 +12,16 @@ const removeUnderline = (e) => {
 
 navLink.forEach(item => item.addEventListener('mouseover', addUnderline));
 navLink.forEach(item => item.addEventListener('mouseout', removeUnderline));
+
+// nav menu toggle for mobile devices
+
+const navList = document.querySelector('.nav__list');
+const navToggle = document.querySelector('.nav__toggle');
+const navHamburger = document.querySelector('.nav__hamburger');
+
+const toggleClass = () => {
+    navList.classList.toggle('nav__list--is-open');
+    navHamburger.classList.toggle('nav__hamburger--is-open');
+}
+
+navToggle.addEventListener('click', toggleClass);

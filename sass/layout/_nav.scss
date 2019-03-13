@@ -24,6 +24,11 @@
         @include tablet-down {
             flex-direction: column;
             flex: 1 100%;
+            display: none;
+
+            &--is-open {
+                display: flex;
+            }
         }
     }
 
@@ -70,6 +75,7 @@
         width: 3rem;
         height: .3rem;
         background: $text-nav-li;
+        transition: all ease-in-out 250ms;
     }
 
     &__hamburger::before {
@@ -78,5 +84,20 @@
 
     &__hamburger::after {
         transform: translateY(0.3rem);
+    }
+
+    &__hamburger {
+
+        &--is-open {
+            transform: rotate(45deg);
+
+            &:before {
+                opacity: 0;
+            }
+
+            &::after {
+                transform: rotate(-90deg) translateX(0.3rem);
+            }
+        }
     }
 }
