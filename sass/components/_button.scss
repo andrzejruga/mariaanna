@@ -1,0 +1,16 @@
+.btn {
+    padding: 1.7rem 5rem;
+    background-color: $color-accent;
+    color: $text-inverse;
+    text-transform: uppercase;
+    font-weight: $font-middle;
+    font-size: 1.6rem;
+    border: none;
+    cursor: pointer;
+    display: block;
+
+    &:hover,
+    &:focus {
+        background-color: darken($color-accent, 5%);
+    }
+}

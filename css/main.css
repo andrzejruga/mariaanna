@@ -330,6 +330,10 @@ p {
   border-left: transparent;
 }
 
+.works__button {
+  margin: 5rem auto;
+}
+
 .logo {
   font-family: "Dancing Script", cursive;
   font-size: 2.2rem;
@@ -341,7 +345,7 @@ p {
 
 .section__box {
   width: 65%;
-  margin: 10rem auto;
+  margin: 10rem auto 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -360,5 +364,21 @@ p {
   height: .3rem;
   background-color: #d07c7c;
   margin: 2.5rem 0 3.5rem;
+}
+
+.btn {
+  padding: 1.7rem 5rem;
+  background-color: #d07c7c;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.6rem;
+  border: none;
+  cursor: pointer;
+  display: block;
+}
+
+.btn:hover, .btn:focus {
+  background-color: #c96969;
 }
 /*# sourceMappingURL=main.css.map */
