@@ -5,6 +5,10 @@
         display: flex;
         justify-content: space-between;
         padding: 2rem 0;
+
+        @include tablet-down {
+            flex-wrap: wrap;
+        }
     }
 
     &__logo-link {
@@ -16,10 +20,23 @@
         list-style: none;
         display: flex;
         align-items: center;
+        
+        @include tablet-down {
+            flex-direction: column;
+            flex: 1 100%;
+        }
     }
 
     &__item {
         margin-left: 5rem;
+
+        @include tablet-down {
+            margin: 1rem auto;
+
+            &:first-child {
+                margin-top: 2rem;
+            }
+        }
     }
 
     &__link {
@@ -34,5 +51,32 @@
             border-bottom: 2px solid $color-accent;
             border-top: 2px solid transparent;
         }
+    }
+
+    &__toggle {
+        display: none;
+
+        @include tablet-down {
+            display: block;
+            padding: 1.2rem;
+        }
+    }
+
+    &__hamburger,
+    &__hamburger::before,
+    &__hamburger::after {
+        content: '';
+        display: block;
+        width: 3rem;
+        height: .3rem;
+        background: $text-nav-li;
+    }
+
+    &__hamburger::before {
+        transform: translateY(-0.6rem);
+    }
+
+    &__hamburger::after {
+        transform: translateY(0.3rem);
     }
 }
