@@ -57,7 +57,7 @@
         transform: translate(-50%, -50%);
         text-align: center;
         color: $text-inverse;
-        padding: .5rem 0;
+        padding: .5rem 4rem;
     }
 
     &__text-heading {
@@ -74,6 +74,7 @@
 
     &__text-paragraph {
         color: $text-inverse;
+        white-space: nowrap;
     }
 
     &__border {
@@ -85,28 +86,28 @@
 
         &--top-left {
             top: 0;
-            left: -4rem;
+            left: 0;
             border-right: transparent;
             border-bottom: transparent;
         }
 
         &--top-right {
             top: 0;
-            right: -4rem;
+            right: 0;
             border-left: transparent;
             border-bottom: transparent;
         }
 
         &--bottom-left {
             bottom: 0;
-            left: -4rem;
+            left: 0;
             border-top: transparent;
             border-right: transparent;
         }
 
         &--bottom-right {
             bottom: 0;
-            right: -4rem;
+            right: 0;
             border-top: transparent;
             border-left: transparent;
         }
