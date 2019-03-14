@@ -157,6 +157,14 @@ p {
   border-bottom: 1px solid lightgray;
 }
 
+.nav--fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #ffffff;
+  z-index: 1;
+}
+
 .nav__container {
   display: -webkit-box;
   display: -ms-flexbox;

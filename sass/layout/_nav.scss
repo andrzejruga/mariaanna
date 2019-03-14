@@ -1,6 +1,14 @@
 .nav {
     border-bottom: 1px solid lightgray;
 
+    &--fixed {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background: $color-background;
+        z-index: 1;
+    }
+
     &__container {
         display: flex;
         justify-content: space-between;
