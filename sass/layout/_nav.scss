@@ -24,10 +24,12 @@
         @include tablet-down {
             flex-direction: column;
             flex: 1 100%;
-            display: none;
+            max-height: 0;
+            overflow: hidden;
+            transition: all .5s ease-in-out;
 
             &--is-open {
-                display: flex;
+                max-height: 20rem;
             }
         }
     }

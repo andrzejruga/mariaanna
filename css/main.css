@@ -198,12 +198,13 @@ p {
     -webkit-box-flex: 1;
         -ms-flex: 1 100%;
             flex: 1 100%;
-    display: none;
+    max-height: 0;
+    overflow: hidden;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
   }
   .nav__list--is-open {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    max-height: 20rem;
   }
 }
 
