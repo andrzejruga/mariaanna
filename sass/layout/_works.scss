@@ -13,6 +13,29 @@
             "nature nature urban"
             "people wedding urban"
             "architecture architecture animals";
+
+        @include tablet-down {
+            grid-template-columns: repeat(2, auto);
+            grid-template-rows: repeat(4, 50vw);
+            grid-template-areas:
+                "nature nature"
+                "people wedding"
+                "urban animals"
+                "architecture architecture";
+        }
+
+        @include phone {
+            grid-template-columns: auto;
+            grid-template-rows: repeat(6, 50vw);
+            grid-template-areas:
+                "nature"
+                "urban"
+                "people"
+                "wedding"
+                "architecture"
+                "animals";
+
+        }
     }
 
     &__nature {
