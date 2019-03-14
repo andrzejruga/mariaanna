@@ -34,6 +34,12 @@ h1 {
   font-size: 4.8rem;
 }
 
+@media (max-width: 576px) {
+  h1 {
+    font-size: 3rem;
+  }
+}
+
 h2 {
   font-size: 2.5rem;
   text-transform: uppercase;
@@ -125,6 +131,12 @@ p {
           animation: arrow 1s infinite;
   -webkit-animation-direction: alternate;
           animation-direction: alternate;
+}
+
+@media (max-width: 576px) {
+  .header__arrow {
+    bottom: 4rem;
+  }
 }
 
 @-webkit-keyframes arrow {
@@ -382,7 +394,13 @@ p {
           transform: translate(-50%, -50%);
   text-align: center;
   color: #ffffff;
-  padding: .5rem 4rem;
+  padding: .5rem 3rem;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+}
+
+.works__img-text:hover {
+  padding: 2.5rem 5rem;
 }
 
 .works__text-heading {
@@ -464,6 +482,12 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (max-width: 576px) {
+  .section__box {
+    width: 85%;
+  }
 }
 
 .section__pinkish-line {

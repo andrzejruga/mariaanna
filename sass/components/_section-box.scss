@@ -6,6 +6,10 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+
+        @include phone {
+            width: 85%;
+        }
     }
 
     &__pinkish-line {

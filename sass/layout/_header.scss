@@ -50,6 +50,10 @@
         bottom: 7rem;
         animation: arrow 1s infinite;
         animation-direction: alternate;
+
+        @include phone {
+            bottom: 4rem;
+        }
     }
 
     @keyframes arrow {
