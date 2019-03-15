@@ -1,0 +1,63 @@
+.slider {
+    $dots: 3;
+    $dotSize: 1;
+    $dotMargin: .5;
+    $duration: .5s;
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    &__slides {
+        width: $dots * 100%;
+    }
+
+    @for $i from 0 to $dots {
+        $slide: 100% / $dots;
+        $left: $slide * $i;
+
+        &[data-pos="#{ $i }"] &__slides {
+            transform: translateX(-$left);
+        }
+    }
+
+    &__slide {
+        float: left;
+        width: 100% / $dots;
+    }
+
+    &__dots {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__dot {
+        display: block;
+        margin: 0 #{ $dotMargin }rem;
+        width: #{ $dotSize }rem;
+        height: #{ $dotSize }rem;
+        background: lightgray;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    &__indicator {
+        @extend .slider__dot;
+
+        position: absolute;
+        background: $color-accent;
+        // width: #{ 1.3 * $dotSize }rem;
+        // height: #{ 1.3 * $dotSize }rem;
+    }
+
+    @for $i from 0 to $dots {
+        $dot: $dotSize + 2 * $dotMargin;
+        $left: $dot * $i;
+        $right: $dot * ($dots - $i) - $dot;
+
+        &[data-pos="#{ $i }"] &__indicator {
+            left: #{ $left }rem;
+            right: #{ $right }rem;
+        }
+    }
+}

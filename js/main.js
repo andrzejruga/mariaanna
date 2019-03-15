@@ -44,3 +44,7 @@ const fixNav = () => {
 }
 
 window.addEventListener('scroll', fixNav);
+
+
+// slider
+
