@@ -532,6 +532,7 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  overflow: hidden;
 }
 
 .slider__slides {
@@ -565,11 +566,16 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2rem auto;
+  position: relative;
 }
 
 .slider__dot, .slider__indicator {
   display: block;
-  margin: 0 0.5rem;
+  margin: 0 1rem;
   width: 1rem;
   height: 1rem;
   background: lightgray;
@@ -580,20 +586,19 @@ p {
 .slider__indicator {
   position: absolute;
   background: #d07c7c;
+  width: 1.4rem;
+  height: 1.4rem;
 }
 
 .slider[data-pos="0"] .slider__indicator {
-  left: 0rem;
-  right: 4rem;
+  left: -0.2rem;
 }
 
 .slider[data-pos="1"] .slider__indicator {
-  left: 2rem;
-  right: 2rem;
+  left: 2.8rem;
 }
 
 .slider[data-pos="2"] .slider__indicator {
-  left: 4rem;
-  right: 0rem;
+  left: 5.8rem;
 }
 /*# sourceMappingURL=main.css.map */

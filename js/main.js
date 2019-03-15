@@ -48,3 +48,19 @@ window.addEventListener('scroll', fixNav);
 
 // slider
 
+const dotsNumber = 3;
+const slider = document.querySelector('.slider');
+const dots = slider.querySelectorAll('.slider__dot');
+const indicator = slider.querySelector('.slider__indicator');
+
+const changeDot = (e) => {
+    let currPosition = parseInt(slider.getAttribute('data-pos'));
+    let newPosition = parseInt(e.target.getAttribute('data-pos'));
+    
+    slider.setAttribute('data-pos', newPosition);
+};
+
+dots.forEach(dot => {
+    dot.addEventListener('click', changeDot);
+});
+
