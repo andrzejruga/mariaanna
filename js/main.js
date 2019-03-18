@@ -46,21 +46,44 @@ const fixNav = () => {
 window.addEventListener('scroll', fixNav);
 
 
-// slider
+// slider - click a dot to change slide
 
 const dotsNumber = 3;
 const slider = document.querySelector('.slider');
 const dots = slider.querySelectorAll('.slider__dot');
 const indicator = slider.querySelector('.slider__indicator');
+let counter = 0;
 
 const changeDot = (e) => {
-    let currPosition = parseInt(slider.getAttribute('data-pos'));
-    let newPosition = parseInt(e.target.getAttribute('data-pos'));
-    
+    const newPosition = parseInt(e.target.getAttribute('data-pos'));
     slider.setAttribute('data-pos', newPosition);
+    resetInterval();
+    counter = newPosition;
 };
 
 dots.forEach(dot => {
     dot.addEventListener('click', changeDot);
 });
 
+
+// slider - change slides automatically
+
+const changeSlide = () => {
+    counter++;
+    if (counter >= dotsNumber) {
+        counter = 0;
+    }
+    slider.setAttribute('data-pos', counter);
+}
+
+let slideInterval;
+
+const startInterval = () => {
+    slideInterval = setInterval(changeSlide, 5000);
+}
+startInterval();
+
+const resetInterval = () => {
+    clearInterval(slideInterval);
+    startInterval();
+}
