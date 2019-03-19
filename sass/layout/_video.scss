@@ -1,4 +1,5 @@
 .video {
+    // background: linear-gradient(to top right, transparent calc(50% - 1px), $color-black, transparent calc(50% + 1px));
     background-image: url(../../img/08-video.jpg);
     background-size: 116%;
     background-repeat: no-repeat;
@@ -14,22 +15,79 @@
     }
 
     &__arrow {
-        width: 8rem;
-        height: 6rem;
-        border: 1px solid black;
-        margin: 2rem auto;
+        width: 10rem;
+        height: 4rem;
+        margin: 3.4rem auto 2rem;
         display: flex;
         justify-content: center;
         align-items: center;
+        position: relative;
+
+        &::before,
+        &::after {
+            content: '';
+            width: 12.5rem;
+            height: 5rem;
+            position: absolute;
+            background: linear-gradient(to top right, transparent calc(50% - 1px), $color-black, transparent calc(50% + 1px));
+
+            @include phone {
+                display: none;
+            }
+        }
+
+        &::before {
+            left: -13.5rem;
+            top: -5.4rem;
+        }
+
+        &::after {
+            right: -13.5rem;
+            bottom: -5.4rem;
+        }
     }
 
     &__arrow-icon {
-        // border: 1px solid black;
-        border-bottom: 2px solid black;
-        border-right: 2px solid black;
+        border-bottom: 2px solid $color-black;
+        border-right: 2px solid $color-black;
         width: 2rem;
         height: 2rem;
         transform: translateX(-25%) scale(1, 0.66) rotate(-45deg);
+    }
+
+    &__border {
+        position: absolute;
+        width: 1.5rem;
+        height: 1.5rem;
+        border: 1px solid $color-black;
+        
+        &--top-left {
+            top: 0;
+            left: 0;
+            border-right: transparent;
+            border-bottom: transparent;
+        }
+
+        &--top-right {
+            top: 0;
+            right: 0;
+            border-left: transparent;
+            border-bottom: transparent;
+        }
+
+        &--bottom-left {
+            bottom: 0;
+            left: 0;
+            border-right: transparent;
+            border-top: transparent;
+        }
+
+        &--bottom-right {
+            bottom: 0;
+            right: 0;
+            border-left: transparent;
+            border-top: transparent;
+        }
     }
 
     &__text {
