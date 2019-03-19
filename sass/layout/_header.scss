@@ -50,6 +50,7 @@
         bottom: 7rem;
         animation: arrow 1s infinite;
         animation-direction: alternate;
+        font-size: 2rem;
 
         @include phone {
             bottom: 4rem;
