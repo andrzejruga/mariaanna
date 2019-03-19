@@ -1,0 +1,11 @@
+.follow {
+
+    &__box {
+        width: 60%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+        font-size: 2.5rem;
+        color: $text-main;
+    }
+}
