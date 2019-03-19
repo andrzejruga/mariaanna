@@ -6,6 +6,26 @@
         display: flex;
         justify-content: space-around;
         font-size: 2.5rem;
+    }
+
+    &__link {
+        text-decoration: none;
+    }
+    
+    &__logo {
+        width: 6.2rem;
+        height: 6.2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         color: $text-main;
+
+        &:hover {
+            background: $color-accent;
+            border: 0.5rem solid $text-inverse;
+            border-radius: 50%;
+            box-shadow: 0 0 0 0.1rem $color-accent;
+            color: $text-inverse;
+        }
     }
 }

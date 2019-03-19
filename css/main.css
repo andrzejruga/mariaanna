@@ -67,7 +67,34 @@ p {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   font-size: 2.5rem;
+}
+
+.follow__link {
+  text-decoration: none;
+}
+
+.follow__logo {
+  width: 6.2rem;
+  height: 6.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #848282;
+}
+
+.follow__logo:hover {
+  background: #d07c7c;
+  border: 0.5rem solid #ffffff;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 0 0.1rem #d07c7c;
+          box-shadow: 0 0 0 0.1rem #d07c7c;
+  color: #ffffff;
 }
 
 .header {
