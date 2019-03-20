@@ -1,0 +1,16 @@
+.contact {
+    position: relative;
+    
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background: url(../../img/09-contact.jpg) no-repeat;
+        background-size: cover;
+        opacity: .2;
+        z-index: -1;
+    }
+}

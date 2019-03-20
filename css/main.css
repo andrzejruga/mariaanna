@@ -58,9 +58,26 @@ p {
   font-size: 1.4rem;
 }
 
+.contact {
+  position: relative;
+}
+
+.contact::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: url(../../img/09-contact.jpg) no-repeat;
+  background-size: cover;
+  opacity: .2;
+  z-index: -1;
+}
+
 .follow__box {
   width: 60%;
-  margin: 0 auto;
+  margin: 0 auto 10rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -631,7 +648,8 @@ p {
 
 .section__box {
   width: 65%;
-  margin: 10rem auto 2rem;
+  margin: 0 auto 2rem;
+  padding-top: 10rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -751,5 +769,16 @@ p {
 
 .slider[data-pos="2"] .slider__indicator {
   left: 5.8rem;
+}
+
+.form {
+  width: 60%;
+  margin: 0 auto;
+  padding-top: 3rem;
+  padding-bottom: 10rem;
+}
+
+.form__label {
+  display: none;
 }
 /*# sourceMappingURL=main.css.map */
