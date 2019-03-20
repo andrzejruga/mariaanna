@@ -4,7 +4,42 @@
     padding-top: 3rem;
     padding-bottom: 10rem;
 
+    @include tablet-down {
+        width: 100%;
+    }
+
+    &__row {
+        margin-bottom: 2rem;
+
+        &:last-child {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
     &__label {
         display: none;
+    }
+
+    &__input {
+        width: 100%;
+        border: 1px solid $color-accent;
+        padding: 2rem;
+        font-family: $font-stack;
+        font-size: 1.6rem;
+    }
+
+    &__textarea {
+        min-height: 15rem;
+    }
+
+    &__note {
+        font-size: 1.4rem;
+        padding-left: 4rem;
+
+        @include tablet-down {
+            padding-left: 0;
+        }
     }
 }
