@@ -1,0 +1,34 @@
+.footer {
+
+    &__container {
+        padding: 3rem 0;
+    }
+
+    &__arrow-icon {
+        display: block;
+        margin: 0 auto;
+        width: 1.4rem;
+        height: 1.4rem;
+        border-right: 2px solid $text-main;
+        border-top: 2px solid $text-main;
+        transform: rotate(-45deg);
+    }
+
+    &__logo {
+        text-align: center;
+        color: $text-nav-logo;
+        margin: 2rem 0;
+        font-size: 2.1rem;
+    }
+
+    &__logo-name {
+    }
+
+    &__logo-subtitle {
+        font-size: 1.5rem;
+    }
+
+    &__copyright {
+        font-size: 1.2rem;
+    }
+}
